@@ -1,0 +1,417 @@
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+
+
+
+ /*---------------les grosse section de base ---------------------*/
+
+*{
+margin: 0;
+padding: 0;
+scroll-behavior: smooth;
+
+}
+
+header, #main, footer{
+  
+   width:100% ; 
+    height: 2000px;
+   margin: 0 auto;
+   padding: 0;
+   
+   
+}
+header{
+
+   position: sticky;
+   top: 0px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height:15% ;
+    width: 100%;
+    align-items: center;
+    background-color: blueviolet;
+    transition: all 0.5s;
+}
+
+
+
+
+#main{
+  
+   
+    width: 100%;
+    height: 700vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.5s;
+}
+footer{
+    
+height: 25%;
+background-color: coral;
+width: 100%;
+background-image: url("../image/pied.png");
+background-position: -750px 0px;
+    background-size: 3500px 450px;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+/*----------------Ce qu'il y a dans le header------------------*/
+
+
+
+
+nav{
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+
+header img{  
+display: flex;
+width: 1.5%;
+height: 1.5%;
+justify-content: flex-end;
+
+}
+
+
+
+
+body header img:hover>div{
+ 
+opacity: 1;
+}
+
+
+
+#gagner{
+    background-image: url("../image/bouteille.png");
+    background-size: 33px 100px;
+    transition: all 0.5s;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+}
+
+#gagner:hover{
+    background-image: url("../image/argent.png");
+    background-repeat: repeat;
+    background-size: 100px 43px;
+    width: 300px;
+    height: 300px;
+}
+
+
+header a:hover{
+    font-size: xx-large;
+    transition: all 0.5s;
+    color: yellowgreen;
+}
+
+header a{
+    color: yellow;
+    text-decoration: none;
+   
+    font-size:x-large;
+    
+}
+header h1{
+    font-family: 'Rubik Vinyl', cursive;
+}
+
+/*---------------- dans la balise hisoire -----------------*/
+
+#histoire{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color:darkgoldenrod;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+#histoire img{
+    width: 50%;
+    height: 50%;
+    }
+    
+    
+    #histoire h3{
+      padding: 16px;
+      font-size: 54px;
+    
+    }
+
+
+
+/*---------------- dans la balise énigme 1 -----------------*/
+
+#enigme1{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-image: url("../image/horaire.png");
+    background-size: 1500px 1100px;
+    background-repeat: no-repeat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+    
+#enigme1 td {
+    font-size: 40px;
+text-align: center;
+}
+
+#enigme1 th {
+    font-size: 30px;
+
+}
+#enigme1 h1 {
+  
+    background-color: aliceblue;
+}
+#enigme1 h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    background-color: aliceblue;
+}
+
+#enigme1 h4 {
+    background-color: aliceblue;
+    font-size: 16px;
+margin-bottom: 50px;
+}
+
+
+
+table{
+    border : 1px solid  #333;
+    border-collapse: collapse;
+   margin: 0 auto;
+    background-color: white;
+  }	
+  th, td{
+    
+    border : 1px solid  #333;
+    width: 200px;
+   height: 90px;
+
+  }
+
+
+
+
+
+
+/*---------------- dans la balise énigme 2 -----------------*/
+
+#enigme2{
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+    justify-content:space-around;
+    height: 100%;
+    width: 100%; 
+    background-color: darkcyan;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#enigme2 #paragraphe {
+width: 750px;
+padding: 30px;
+font-size: clamp(2vh, 3%, 0.4vh);
+text-align: center;
+
+}
+#enigme2 img{
+    width: 100%;
+height: 100%;
+}
+
+/*---------------- dans la balise énigme 3 -----------------*/
+
+#enigme3{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+background-color: antiquewhite;
+font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+#enigme3 img{
+
+   height: 25vh;
+   
+}
+#ligne1, #ligne2, #ligne3{
+    flex-direction: row;
+    
+}
+
+
+
+
+/*---------------- dans la balise énigme 4 -----------------*/
+#enigme4{ 
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("../image/video.png");
+    background-size: 1950px 1100px;
+    background-repeat: no-repeat;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+video{
+
+    height: 50%;
+    width: 50%;
+    border: 5px solid black;
+}
+
+
+
+/*---------------- dans la balise reponse -----------------*/
+
+#reponse{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: url("../image/questionaire.png");
+    background-size: 2000px 1100px;
+    background-repeat: no-repeat;
+}
+
+#leQuestionaire{
+    width: 100%;
+  
+}
+form{
+    width: 50vw;
+    background-color: brown;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+fieldset{
+    background-color: aqua
+}
+.colone{
+    flex: 1 0 40%
+}
+
+.colone:nth-of-type(1){
+  align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+.colone fieldset{
+    display: flex;
+    justify-content: space-between;
+}
+.colone:nth-of-type(2){
+
+      display: flex;
+      flex-direction: column;
+  }
+
+/*---------------- dans la balise footer -----------------*/
+
+#lien{
+    display: flex; 
+    align-items:center;
+    justify-content: center;
+}
+#lien img{
+    width: 3%;
+  
+}
+
+
+#lien a:hover{
+    font-size: xx-large;
+    transition: all 0.5s;
+}
+
+
+#kevin{
+    background-image: url("../image/kevin.png");
+    background-size: 500px 350px;
+    width: 500px;
+    height: 350px;
+    background-repeat: no-repeat;
+   
+    transition: all 0.5s;
+}
+
+
+#kevin:hover{
+
+background-image: url("../image/amoi.png");
+}
+
+#instaBehance{
+    margin-top: 30px;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
